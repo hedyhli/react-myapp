@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 function App() {
+  var helloHeading = <h1>Hello World</h1>;
+  ReactDOM.render(
+    helloHeading,
+    document.getElementById('root')
+)
   return (
-    ReactDOM.render(
-      <h1>Hello, world!</h1>,
-      document.getElementById('root')
-  )) // worked!!!
+      helloHeading
+    ) // worked!!!
 }
 
 export default App;
