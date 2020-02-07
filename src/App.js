@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+function HelloName(props) { // capitalised func name and worked! -- user-def always capitalise!
+  return <h1>Hello, {props.name}!</h1>;
+}
+
 function App() {
-  var helloHeading = <h1>Hello World</h1>;
+  var helloWorld = <HelloName name="World"/>;
   ReactDOM.render(
-    helloHeading,
+    helloWorld,
     document.getElementById('root')
 )
   return (
-      helloHeading
+      helloWorld
     ) // worked!!!
 }
 
