@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function HelloName(props) { // capitalised func name and worked! -- user-def always capitalise!
-  return <h1>Hello, {props.name}!</h1>;
+class HelloName extends React.Component { // user-def always capitalise first letter!
+  render() {
+    return <h1>Hello, {this.props.name}!</h1>;
+  }
 }
 
 function App() {
@@ -10,10 +12,10 @@ function App() {
   ReactDOM.render(
     helloWorld,
     document.getElementById('root')
-)
+  )
   return (
-      helloWorld
-    ) // worked!!!
+    helloWorld
+  ) // worked!!!
 }
 
 export default App;
