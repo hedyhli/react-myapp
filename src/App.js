@@ -28,7 +28,7 @@ class BodyStuff extends React.Component {
     }
   }
   render() {
-    return <div id="body-stuff"><h1>{this.state.contents}!</h1></div>;
+    return <p>{this.state.contents}!</p>;
   }
 }
 
