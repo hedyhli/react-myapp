@@ -32,16 +32,18 @@ class BodyStuff extends React.Component {
   }
 }
 
-function App() {
-  var helloWorld = <HelloName name=""/>;
-  var myBody = <BodyStuff contents="Hi"/> // TODO - put this on page!
-  ReactDOM.render(
-    helloWorld,
-    document.getElementById('root')
-  )
-  return (
-    helloWorld
-  ) // worked!!!
+class App extends React.Component {
+
+  render() {
+    var helloHeader = <HelloName name=""/>;
+    var myBody = <BodyStuff contents="Hi"/>;
+    return (
+      <div>
+        {helloHeader}
+        {myBody}
+      </div>
+    );
+  }
 }
 
 export default App;
