@@ -37,7 +37,7 @@ class App extends React.Component {
   render() {
     var helloHeader = <HelloName name=""/>;
     var myBody = <BodyStuff contents="Hi"/>;
-    return (
+    return ( // return both components
       <div>
         {helloHeader}
         {myBody}
