@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class BodyStuff extends React.Component {
+class HeaderDescrpt extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,4 +15,4 @@ class BodyStuff extends React.Component {
     return <p>{this.state.contents}!</p>;
   }
 }
-export default BodyStuff;
+export default HeaderDescrpt;

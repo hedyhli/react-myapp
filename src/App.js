@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import HelloName from './MyApp/HelloName'
-import BodyStuff from './MyApp/BodyStuff'
+import HeaderDescrpt from './MyApp/HeaderDescrpt'
 
 class App extends React.Component {
 
   render() {
     var helloHeader = <HelloName name=""/>;
-    var myBody = <BodyStuff contents="Hi"/>;
+    var headerDescript = <HeaderDescrpt contents="Hi"/>;
     return ( // return both components
       <div>
         {helloHeader}
-        {myBody}
+        {headerDescript}
       </div>
     );
   }
