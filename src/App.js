@@ -7,11 +7,11 @@ class App extends React.Component {
 
   render() {
     var helloHeader = <HelloName name=""/>;
-    var headerDescript = <HeaderDescrpt contents="Hi"/>;
+    var headerDescrpt = <HeaderDescrpt contents="Hi"/>;
     return ( // return both components
       <div>
         {helloHeader}
-        {headerDescript}
+        {headerDescrpt}
       </div>
     );
   }
