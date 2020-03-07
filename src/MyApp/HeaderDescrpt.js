@@ -5,7 +5,7 @@ class HeaderDescrpt extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      contents: "Sup, I'm the body"
+      contents: "This is the description for the heading."
     }
     if (this.props.contents) {
       this.setState({contents: this.props.contents});
