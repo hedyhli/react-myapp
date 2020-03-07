@@ -12,7 +12,7 @@ class HeaderDescrpt extends React.Component {
     }
   }
   render() {
-    return <p>{this.state.contents}!</p>;
+    return <p>{this.state.contents}</p>;
   }
 }
 export default HeaderDescrpt;
