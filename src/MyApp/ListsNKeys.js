@@ -1,18 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class ListsNKeys extends Component {
+class ListsNKeys extends React.Component {
   constructor(props) {
     super(props);
-    // if(this.props.item) {
-    // }
+    this.state = {
+      items: [1,2,3,4,5]
+    }
+
+    if(this.props.item) {
+      let temp = props.items.map((n) => 
+        <ul>{n}</ul>
+      );
+      this.setState({this: temp})
+    }
+
   }
   render() {
     return (
       <div>
-        <li>
-          <ol>{this.props.item}</ol>
-        </li>
+        <li>{this.state.items}</li>
       </div>
     );
   }
