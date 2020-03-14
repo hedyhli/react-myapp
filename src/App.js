@@ -1,8 +1,8 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import HelloName from './MyApp/HelloName'
-import HeaderDescrpt from './MyApp/HeaderDescrpt'
-import ListsNKeys from "./MyApp/ListsNKeys";
+import HelloName from './Components/HelloName'
+import HeaderDescrpt from './Components/HeaderDescrpt'
+import ListsNKeys from "./Components/ListsNKeys";
 
 class App extends React.Component {
 
