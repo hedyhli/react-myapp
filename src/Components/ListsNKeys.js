@@ -4,22 +4,21 @@ import React from 'react';
 class ListsNKeys extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      items: [1,2,3,4,5]
-    }
 
-    if(this.props.item) {
+    if(this.props.items) {
       let temp = props.items.map((n) => 
-        <ul>{n}</ul>
+        <li>{n}</li>
       );
-      this.setState({this: temp})
+      this.state = {items: temp};
+    } else {
+      this.state = { items: [1,2,3,4,5] };
     }
 
   }
   render() {
     return (
       <div>
-        <li>{this.state.items}</li>
+        <ul>{this.state.items}</ul>
       </div>
     );
   }

@@ -4,12 +4,12 @@ import HelloName from './Components/HelloName'
 import HeaderDescrpt from './Components/HeaderDescrpt'
 import ListsNKeys from "./Components/ListsNKeys";
 
+var myListItems = [5,4,3,2,1]
 class App extends React.Component {
-
   render() {
     var helloHeader = <HelloName name=""/>;
     var headerDescrpt = <HeaderDescrpt contents="Hi"/>;
-    var myList = <ListsNKeys items={[5,4,3,2,1]}/> // FIXME:props not working (showing default items)
+    var myList = <ListsNKeys items={myListItems}/>
     return (
       <div>
         {helloHeader}
