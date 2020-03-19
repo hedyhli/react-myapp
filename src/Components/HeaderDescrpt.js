@@ -4,11 +4,13 @@ import React from 'react';
 class HeaderDescrpt extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      contents: "This is the description for the heading."
-    }
+    
     if (this.props.contents) {
-      this.setState({contents: this.props.contents});
+      this.state = {contents: this.props.contents};
+    } else {
+      this.state = {
+        contents: "This is the description for the heading."
+      }
     }
   }
   render() {
